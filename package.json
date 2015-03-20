@@ -1,0 +1,28 @@
+{
+  "name": "HealthyStart",
+  "version": "1.0.0",
+  "description": "Web-based version of AlignmentNashville's Healthy Start resource guide for pregnant teens.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/complikatyed/HealthyStart.git"
+  },
+  "keywords": [
+    "pregnancy",
+    "pregnant",
+    "nashville",
+    "community",
+    "teenager",
+    "teens",
+    "resources"
+  ],
+  "author": "\"Katye Russell <katye.russell@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/complikatyed/HealthyStart/issues"
+  },
+  "homepage": "https://github.com/complikatyed/HealthyStart"
+}

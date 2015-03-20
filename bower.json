@@ -1,0 +1,37 @@
+{
+  "name": "HealthyStart",
+  "version": "0.0.0",
+  "homepage": "https://github.com/complikatyed/HealthyStart",
+  "authors": [
+    "Katye Russell <katye.russell@gmail.com>"
+  ],
+  "description": "Resource guide for pregnant teens in Nashville, TN",
+  "main": "index.html",
+  "keywords": [
+    "pregnant",
+    "pregnancy",
+    "Nashville",
+    "resources",
+    "teen",
+    "teenager"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "lodash": "~3.5.0",
+    "firebase": "~2.2.3",
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "angular": "~1.3.15",
+    "moment": "~2.9.0",
+    "angular-route": "~1.3.15",
+    "angular-resource": "~1.3.15"
+  }
+}
