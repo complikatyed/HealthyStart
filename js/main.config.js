@@ -1,31 +1,13 @@
 angular
-  .module('future')
-  .config(futureConfig);
+  .module('bob')
+  .config(bobConfig);
 
-////
-function futureConfig($routeProvider) {
+function bobConfig($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'js/future/home.html',
+      templateUrl: '../html/home.html',
     })
-
     .otherwise({
       redirectTo: '/'
     });
- }
-
- // .when('/tas/new', {
- //   templateUrl: 'js/tas/form.html',
- //   controller: 'TasController',
- //   controllerAs: 'tas'  // is equal to 'vm'
- // })
- // .when('/tas/:uuid', {  // the colon is there to show that it's a dynamic route
- //   templateUrl: 'js/tas/show.html',
- //   controller: 'ShowController',
- //   controllerAs: 'show'  // is equal to 'vm'  (see % note below )
- // })
- // .when('/tas/:uuid/edit', {
- //   templateUrl: 'js/tas/form.html',
- //   controller: 'EditController',
- //   controllerAs: 'tas'
- // })
+}

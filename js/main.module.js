@@ -1,1 +1,1 @@
-angular.module('future', ['ngRoute', 'ngResource','firebase']);
+angular.module('bob', ['ngRoute', 'ngResource', 'firebase']);
