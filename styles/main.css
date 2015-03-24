@@ -1,3 +1,12 @@
 h1 {
   color: green;
 }
+
+h2 {
+  font-family: 'Arvo', serif;
+  color: $dark-teal;
+}
+
+p {
+  font-family: 'Monda', sans-serif;
+}
