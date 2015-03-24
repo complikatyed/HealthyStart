@@ -1,12 +1,23 @@
 h1 {
-  color: green;
+  font-family: 'Oswald', sans-serif;;
+  color: #094A7D;
+  font-size: 2em;
+  text-align: center;
 }
 
 h2 {
-  font-family: 'Arvo', serif;
-  color: $dark-teal;
+  font-family: 'Oswald', sans-serif;;
+  font-style: bold;
+  color: $spring-green;
 }
 
 p {
   font-family: 'Monda', sans-serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
