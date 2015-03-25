@@ -1,36 +1,45 @@
+@import "colors";
+
 h1 {
-  font-family: 'Oswald', sans-serif;
-  color: #0489B1;
+  font-family: 'Oswald', sans-serif;;
+  color: $an-turquoise;
   font-size: 2.25em;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-style: bold;
-  color: #86D81F;
+  color: $spring-green;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+}
 
 p {
-  font-family: 'Monda', sans-serif; }
+  font-family: 'Monda', sans-serif;
+}
 
 #tagline, .subhead {
-  color: #FAAC58;
+  color: $an-orange;
   text-align: center;
-  padding: 0; }
+  padding: 0;
+}
 
 .sublist {
-  margin-left: -15px; }
+  margin-left: -15px;
+}
 
 li {
   list-style-type: square;
-  list-style-position: inside; }
+  list-style-position: inside;
+}
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 0; }
+  padding: 0;
+}
