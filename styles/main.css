@@ -1,18 +1,38 @@
 h1 {
   font-family: 'Oswald', sans-serif;;
-  color: #094A7D;
-  font-size: 2em;
+  color: #0489B1;
+  font-size: 2.25em;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
-h2 {
+h2, h3, h4 {
   font-family: 'Oswald', sans-serif;;
   font-style: bold;
   color: $spring-green;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 
 p {
   font-family: 'Monda', sans-serif;
+}
+
+#tagline, .subhead {
+  color: #FAAC58;
+  text-align: center;
+  padding: 0;
+}
+
+.sublist {
+  margin-left: -15px;
+}
+
+li {
+  list-style-type: square:
+  list-style-position: inside;
 }
 
 img {
