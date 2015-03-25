@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" ng-app="bob">
+<html lang="en-US" ng-app="hsapp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,36 +14,12 @@
   <body><!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--></body>
     <div class="container">
 
-      <img src="../assets/an_logo.jpeg" alt="Alignment Nashville logo">
+      <div ng-view></div>
 
-      <h1>Healthy Start, Healthy Future</h1>
-
-      <p>Something</p>
-
-        <div ng-init="stages = [
-          {symp: 'No menstrual cycle'},
-          {symp: 'May feel sick to your stomach'},
-          {symp: 'May vomit or just feel queasy'},
-          {symp: 'Increased urination'},
-          {symp: 'Breasts may be bigger and/or more tender'},
-          {symp: 'Increased appetite'},
-          {symp: 'Increased moodiness'}
-          ]">
-
-           We list {{stages.length}} symptoms for stage 0.
-
-           They are:
-            <ul class="body">
-              <li class="symptoms" ng-repeat="stage in stages">
-                {{stage.symp}}
-              </li>
-            </ul>
-          </div>
-      </div>
-
+    </div>
 
 <!-- Everything under here is script data  -->
-    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-resource/angular-resource.min.js"></script>
     <script src="bower_components/firebase/firebase.js"></script>
