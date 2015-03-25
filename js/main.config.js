@@ -1,13 +1,14 @@
 angular
-  .module('bob')
-  .config(bobConfig);
-
-function bobConfig($routeProvider) {
-  $routeProvider
-    .when('/', {
-      templateUrl: '../html/home.html',
-    })
+  .module('hsapp', ['ngRoute'])
+  .config(function ($routeProvider) {
+    $routeProvider
+      .when('/', {
+        templateUrl: '../html/home.html',
+      })
+      .when('/stage0', {
+        templateUrl: '../html/stage0.html',
+      })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/index.html'
     });
 }
