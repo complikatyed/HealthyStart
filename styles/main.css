@@ -50,7 +50,8 @@ ul.breadcrumb {
 .breadcrumb li a, .breadcrumb li span {
   display: block;
   float: left;
-  position: relative; }
+  position: relative;
+  color: white; }
 
 .breadcrumb li a {
   text-decoration: none; }
@@ -65,24 +66,6 @@ li.breadcrumb:after {
   width: 0;
   height: 0;
   border-left: 20px solid #86D81F; }
-
-body:before, body:after {
-  content: "";
-  position: fixed;
-  background: #86D81F;
-  left: 0;
-  right: 0;
-  height: 5px; }
-
-body:before {
-  top: 0; }
-
-body:after {
-  bottom: 0; }
-
-body {
-  border-left: 5px solid #86D81F;
-  border-right: 5px solid #86D81F; }
 
 li {
   list-style-type: square;
@@ -103,12 +86,46 @@ li {
   margin-left: 30px;
   color: #F76010; }
 
+.animate-show {
+  line-height: 20px;
+  opacity: 1;
+  padding: 10px;
+  border: 1px solid black;
+  background: #FFDE16; }
+
+.animate-show.ng-hide-add.ng-hide-add-active, .animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px; }
+
+.check-element {
+  padding: 10px;
+  border: 1px solid black;
+  background: white; }
+
+.btn2 {
+  font-family: 'Oswald', sans-serif;
+  color: #0489B1;
+  font-size: 3em;
+  text-align: center;
+  background-color: #FFDE16; }
+
+.btn {
+  box-shadow: 0 3px 0 0 #007299; }
+
+html, body {
+  height: 100%; }
+
 h1 {
   font-family: 'Oswald', sans-serif;
   color: #0489B1;
   font-size: 3em;
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 10px; }
 
 h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
@@ -120,6 +137,9 @@ h2, h3, h4 {
   text-align: center;
   padding-bottom: 20px; }
 
+.center-sub {
+  text-align: center; }
+
 p .center {
   text-align: center;
   padding-top: -25px; }
@@ -130,10 +150,14 @@ p {
 #tagline, .subhead {
   color: #FAAC58;
   text-align: center;
-  padding: 0; }
+  padding-bottom: 10px; }
+
+#tagline {
+  font-size: 1.09em; }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 0; }
+  padding: 0;
+  max-height: 85px; }
