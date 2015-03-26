@@ -1,9 +1,11 @@
 @import "colors";
+@import "breadcrumbs";
+@import "border";
 
 h1 {
   font-family: 'Oswald', sans-serif;;
   color: $an-turquoise;
-  font-size: 2.25em;
+  font-size: 3em;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 0;
@@ -15,7 +17,7 @@ h2, h3, h4 {
   color: $spring-green;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 p {

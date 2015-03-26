@@ -10,7 +10,6 @@ ul.breadcrumb {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
-
 .breadcrumb li {
     float: left;
     display: list-item;
@@ -40,7 +39,7 @@ ul.breadcrumb {
     padding-left: 45px;
 }
 .breadcrumb li:not(.last-crumb) a:after {
-    content: "\27F6";
+    //content: "\27F6";
     margin-left: 10px;
     color: #444444;
     margin-right: 0px;
@@ -57,4 +56,13 @@ ul.breadcrumb {
 .breadcrumb li.first-crumb a {
     padding-left: 0px;
     margin-left: 0px;
+}
+li.breadcrumb:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #eee;
+    border-bottom: 20px solid #eee;
+    border-left: 20px solid #ccc;
 }
