@@ -1,0 +1,25 @@
+li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.stage-list {
+  padding: 5px 0px 0px 10px;
+}
+
+.sublist {
+  margin-left: -15px;
+  list-style-type: circle;
+}
+
+.no-bullet {
+  list-style-type: none;
+  //margin-left: -15px;
+  font-style: italic;
+}
+
+
+.slight-indent {
+  margin-left: 30px;
+  color: $orange;
+}
