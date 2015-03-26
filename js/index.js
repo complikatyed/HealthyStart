@@ -19,6 +19,8 @@ angular
       })
       .when('/stage1', {
         templateUrl: '../html/stage1.html',
+        controller: 'ShowController',
+        controllerAs: 'hsapp'
       })
       .when('/stage2', {
         templateUrl: '../html/stage2.html',
@@ -32,4 +34,11 @@ angular
       .otherwise({
         redirectTo: '/'
       })
-  });
+  })
+  .controller('ShowController', function($scope) {
+    $scope.toggle = false;
+    $scope.clickMe = function(e) {
+      $scope.toggle = !$scope.toggle;
+      console.log("Click");
+  };
+});
