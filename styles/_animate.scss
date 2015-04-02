@@ -2,7 +2,7 @@
   line-height: 20px;
   opacity: 1;
   padding: 10px;
-  border: 1px solid black;
+  //border: 1px solid black;
   background: $spring-yellow;
 }
 
@@ -32,6 +32,24 @@
   background-color: $spring-yellow;
 }
 
-.btn {
-  box-shadow: 0 3px 0 0 #007299;
+// .btn {
+//   box-shadow: 0 3px 0 0 #007299;
+// }
+
+.anteater {
+  display:block;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  //filter: url(svg-url#element-id)
+  transition: all 0.5s ease;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.in-focus {
+  &:hover,
+  &:focus{
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+      }
 }

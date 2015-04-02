@@ -3,8 +3,14 @@ li {
   list-style-position: inside;
 }
 
+.crumbs {
+  list-style-type: none;
+  list-style-position: none;
+}
+
 .stage-list {
   padding: 5px 0px 0px 10px;
+  background: white;
 }
 
 .sublist {
@@ -18,8 +24,17 @@ li {
   font-style: italic;
 }
 
+.icon {
+  list-style-type: none;
+}
+
+.icon-center {
+  list-style-type: none;
+  text-align: center;
+}
+
 
 .slight-indent {
-  margin-left: 30px;
+  margin-left: 25px;
   color: $orange;
 }
