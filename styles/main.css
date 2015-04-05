@@ -43,56 +43,16 @@
   color: #6A4A3C;
   outline: #86D81F; }
 
-#crumbs div {
-  display: block;
-  margin-left: 0px;
-  margin-right: auto; }
-
-.crumbs {
-  display: inline; }
-
-#crumbs ul li a {
-  display: block;
-  float: left;
-  height: 50px;
-  background: #3498db;
-  text-align: center;
-  padding: 30px 40px 50px 80px;
-  position: relative;
-  margin: 0 10px 0 0;
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #fff; }
-
-#crumbs ul li a:before {
-  content: "";
-  border-top: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  border-left: 40px solid #CC333F;
-  position: absolute;
-  left: 0;
-  top: 0; }
-
-#crumbs ul li a:after {
-  content: "";
-  border-top: 40px solid transparent;
-  border-bottom: 40px solid transparent;
-  border-left: 40px solid #3498db;
-  position: absolute;
-  right: -40px;
-  top: 0;
-  z-index: 1; }
-
 li {
-  list-style-type: square;
-  list-style-position: inside; }
+  list-style-type: square; }
 
 .crumbs {
   list-style-type: none;
   list-style-position: none; }
 
 .stage-list {
-  padding: 5px 0px 0px 10px;
+  list-style-type: none;
+  padding: 10px 0px 0px 10px;
   background: white; }
 
 .sublist {
@@ -101,6 +61,7 @@ li {
 
 .no-bullet {
   list-style-type: none;
+  margin-left: -15px;
   font-style: italic; }
 
 .icon {
@@ -129,8 +90,18 @@ h1 {
 h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-style: bold;
-  color: #00A0B0;
+  color: #094A7D;
   margin-bottom: 0; }
+
+.extra {
+  color: #EDC951;
+  padding-top: 30px; }
+
+.describe {
+  padding-bottom: 15px; }
+
+.fancy {
+  font-style: underline; }
 
 .top-button {
   padding-top: 50px; }
@@ -159,7 +130,7 @@ a.term.active.focus, a.term.active:focus, a.term:focus, a.term:hover {
 #tagline {
   font-size: 1.09em;
   text-align: center;
-  color: #6A4A3C; }
+  color: #FAAC58; }
 
 img {
   display: block;
@@ -172,7 +143,9 @@ img {
   padding-bottom: 25px; }
 
 dt {
-  font-style: bold; }
+  font-family: sans-serif;
+  font-style: bold;
+  padding-top: 6px; }
 
 a.active.focus, a.active:focus, a:focus, a:hover {
   color: #00A0B0; }

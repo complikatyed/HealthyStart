@@ -1,6 +1,5 @@
 @import "colors";
 @import "buttons";
-@import "crumbs2";
 @import "lists";
 //@import "animate";
 
@@ -21,9 +20,22 @@ h1 {
 h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-style: bold;
-  color: $contrast1;
+  color: $dark-teal;
   //padding-top: 20px;
   margin-bottom: 0;
+}
+
+.extra {
+  color: $highlight3;
+  padding-top: 30px;
+}
+
+.describe {
+  padding-bottom: 15px;
+}
+
+.fancy {
+  font-style: underline;
 }
 
 .top-button {
@@ -65,7 +77,7 @@ a.term:hover {
 #tagline {
   font-size: 1.09em;
   text-align: center;
-  color: $letterdark;
+  color: $an-orange;
 }
 
 img {
@@ -81,7 +93,9 @@ img {
 }
 
 dt {
+  font-family: sans-serif;
   font-style: bold;
+  padding-top: 6px;
 }
 
 a.active.focus,

@@ -1,6 +1,5 @@
 li {
   list-style-type: square;
-  list-style-position: inside;
 }
 
 .crumbs {
@@ -9,9 +8,13 @@ li {
 }
 
 .stage-list {
-  padding: 5px 0px 0px 10px;
+  list-style-type: none;
+  padding: 10px 0px 0px 10px;
   background: white;
 }
+
+
+
 
 .sublist {
   margin-left: -15px;
@@ -20,7 +23,7 @@ li {
 
 .no-bullet {
   list-style-type: none;
-  //margin-left: -15px;
+  margin-left: -15px;
   font-style: italic;
 }
 
