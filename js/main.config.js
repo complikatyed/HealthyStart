@@ -7,19 +7,6 @@ function appConfig($routeProvider) {
     .when('/', {
       templateUrl: '../html/home.html',
     })
-    .when('/resources', {
-      templateUrl: '../html/resources/resources.html',
-      controller: 'ResourceController',
-      controllerAs: 'resources'
-    })
-    .when('/describe', {
-      templateUrl: '../html/resources/descriptions.html',
-      controller: 'ResourceController',
-      controllerAs: 'resources'
-    })
-    .when('/search', {
-      templateUrl: '../html/search.html',
-    })
     .when('/stage0', {
       templateUrl: '../html/stages/stage0.html',
     })
@@ -37,17 +24,59 @@ function appConfig($routeProvider) {
     .when('/stage4', {
       templateUrl: '../html/stages/stage4.html',
     })
+    .when('/resources', {
+      templateUrl: '../html/resources/temp/resources.html',
+      controller: 'ResourceController',
+      controllerAs: 'resources'
+    })
+    .when('/describe', {
+      templateUrl: '../html/resources/temp/descriptions.html',
+      controller: 'ResourceController',
+      controllerAs: 'resources'
+    })
+    .when('/tags', {
+      templateUrl: '../html/resources/temp/tags.html',
+      controller: 'ResourceController',
+      controllerAs: 'resources'
+    })
+    .when('/school',{
+      templateUrl: '../html/resources/education.html',
+    })
+    .when('/nutrition',{
+      templateUrl: '../html/resources/nutrition.html',
+    })
     .when('/medical',{
       templateUrl: '../html/resources/medical.html',
     })
     .when('/clinics',{
       templateUrl: '../html/resources/mdh-clinics.html',
     })
+    .when('/homevisits',{
+      templateUrl: '../html/resources/homevisits.html',
+    })
+    .when('/counsel',{
+      templateUrl: '../html/resources/counseling.html',
+    })
+    .when('/mentor',{
+      templateUrl: '../html/resources/mentoring.html',
+    })
+    .when('/parenting',{
+      templateUrl: '../html/resources/parenting.html',
+    })
+    .when('/paperwork',{
+      templateUrl: '../html/resources/paperwork.html',
+    })
     .when('/map',{
       templateUrl: '../html/resources/master-map.html',
     })
+    .when('/crisis',{
+      templateUrl: '../html/resources/crisis.html',
+    })
     .when('/terms', {
       templateUrl: '../html/terms.html',
+    })
+    .when('/search', {
+      templateUrl: '../html/search.html',
     })
     .otherwise({
       redirectTo: '/'
