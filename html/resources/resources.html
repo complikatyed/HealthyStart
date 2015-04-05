@@ -1,0 +1,31 @@
+<h2>Resources</h2>
+
+<h3 class="center-sub noDecoration"><a href="/#/describe">Resource Descriptions</a></h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Agency</th>
+      <th>Contact Name and Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in resources.resourceAgencies">
+      <td><a href="{{item.url}}">{{item.agency}}</a></td>
+      <td><a href="mailto:{{item.email}}">{{item.person}}</a></td>
+      <td>{{item.phone}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<div id="crumbs" class="center">
+  	<ul>
+  		<li class="crumbs"><a href="/#/home">home</a></li>
+      <li class="crumbs"><a href="/#/stages">stages</a></li>
+      <li class="crumbs"><a href="/#/terms">terms</a></li>
+      <li class="crumbs"><a href="/#/resources">resources</a></li>
+  	</ul>
+  </div>
