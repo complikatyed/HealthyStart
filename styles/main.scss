@@ -54,6 +54,14 @@ h2, h3, h4 {
   display: inline-block;
 }
 
+.crumbs a:link, a:visited
+a.term.active.focus,
+a.term.active:focus,
+a.term:focus,
+a.term:hover {
+  color: $an-orange;
+}
+
 .narrow {
   //border: 1px dotted black;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);

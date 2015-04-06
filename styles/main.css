@@ -29,6 +29,9 @@
 .special a {
   color: #0099CC; }
 
+.crumbs a {
+  color: #FAAC58; }
+
 .btn {
   outline: none; }
 
@@ -41,7 +44,8 @@ li {
 .crumbs {
   display: inline;
   list-style-type: none;
-  list-style-position: none; }
+  list-style-position: none;
+  color: #FAAC58; }
 
 .stage-list {
   list-style-type: none;
@@ -199,6 +203,9 @@ h2, h3, h4 {
 
 #crumbs ul {
   display: inline-block; }
+
+.crumbs a:link, a:visited a.term.active.focus, a.term.active:focus, a.term:focus, a.term:hover {
+  color: #FAAC58; }
 
 .narrow {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2); }
