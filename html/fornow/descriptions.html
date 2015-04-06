@@ -1,0 +1,17 @@
+<div class="wrapper">
+
+  <div class="container1">
+
+    <h4 class="describe">Resource Descriptions</h4>
+
+
+    <div class="describe" ng-repeat="item in resources.resourceAgencies">
+     <span><a href="{{item.url}}">{{item.agency}}</a></span>
+     <span>{{item.description}}</span>
+     <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
+     <p class="contact-bottom">Phone: {{item.phone}}</p>
+    </div>
+
+  </div>
+
+</div>
