@@ -75,26 +75,29 @@ li {
   margin-left: 25px;
   color: #F76010; }
 
-html, body {
-  height: 100%;
-  background-color: #CC333F;
-  font-family: 'Monda', sans-serif; }
-
 h1 {
-  font-family: 'Oswald', sans-serif;
-  color: #00A0B0;
-  font-size: 3em;
   text-align: center;
   padding-top: 10px; }
 
 h2, h3, h4 {
-  font-family: 'Oswald', sans-serif;
-  font-style: bold;
-  color: #094A7D;
   margin-bottom: 0; }
 
+.wrapper {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px; }
+
+.container1 {
+  padding: 5px 5px;
+  margin: 3px;
+  border-radius: 5px; }
+
+.container2 {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px; }
+
 .extra {
-  color: #EDC951;
   padding-top: 30px; }
 
 .describe {
@@ -117,20 +120,20 @@ p .center {
   text-align: center; }
 
 .subhead {
-  color: #FAAC58;
   text-align: center;
   padding-bottom: 10px; }
 
-a.term {
-  color: #291F20; }
-
-a.term.active.focus, a.term.active:focus, a.term:focus, a.term:hover {
-  color: #86D81F; }
-
 #tagline {
-  font-size: 1.09em;
-  text-align: center;
-  color: #FAAC58; }
+  text-align: center; }
+
+.contact-top {
+  padding-top: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
+.contact-bottom {
+  padding-top: -3px;
+  padding-bottom: 5px; }
 
 img {
   display: block;
@@ -143,9 +146,54 @@ img {
   padding-bottom: 25px; }
 
 dt {
-  font-family: sans-serif;
-  font-style: bold;
   padding-top: 6px; }
+
+html, body {
+  height: 100%;
+  background-color: #CC333F;
+  font-family: 'Monda', sans-serif; }
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #00A0B0;
+  font-size: 3em; }
+
+h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  font-style: bold;
+  color: #094A7D; }
+
+.container2 {
+  background-color: white; }
+
+.container1 {
+  background-color: #EB6841; }
+
+.wrapper {
+  background-color: #EDC951; }
+
+.extra {
+  color: #EDC951; }
+
+.fancy {
+  font-style: underline; }
+
+.subhead {
+  color: #FAAC58; }
+
+a.term {
+  color: #291F20; }
+
+a.term.active.focus, a.term.active:focus, a.term:focus, a.term:hover {
+  color: #86D81F; }
+
+#tagline {
+  font-size: 1.09em;
+  color: #FAAC58; }
+
+dt {
+  font-family: sans-serif;
+  font-style: bold; }
 
 a.active.focus, a.active:focus, a:focus, a:hover {
   color: #00A0B0; }

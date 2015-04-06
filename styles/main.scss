@@ -1,11 +1,12 @@
 @import "colors";
 @import "buttons";
 @import "lists";
+@import "spacing";
 //@import "animate";
 
 html, body{
   height: 100%;
-  background-color: $background;
+  background-color: $highlight1;
   font-family: 'Monda', sans-serif;
 }
 
@@ -13,53 +14,35 @@ h1 {
   font-family: 'Oswald', sans-serif;
   color: $contrast1;
   font-size: 3em;
-  text-align: center;
-  padding-top: 10px;
 }
 
 h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-style: bold;
   color: $dark-teal;
-  //padding-top: 20px;
-  margin-bottom: 0;
+}
+
+.container2 {
+  background-color: white;
+}
+
+.container1 {
+  background-color: $highlight2;
+}
+.wrapper {
+  background-color: $highlight3;
 }
 
 .extra {
   color: $highlight3;
-  padding-top: 30px;
-}
-
-.describe {
-  padding-bottom: 15px;
 }
 
 .fancy {
   font-style: underline;
 }
 
-.top-button {
-  padding-top: 50px;
-}
-
-.center {
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-.center-sub {
-  text-align: center;
-}
-
-p .center {
-  text-align: center;
-  //padding-top: -25px;
-}
-
 .subhead {
   color: $an-orange;
-  text-align: center;
-  padding-bottom: 10px;
 }
 
 
@@ -76,26 +59,12 @@ a.term:hover {
 
 #tagline {
   font-size: 1.09em;
-  text-align: center;
   color: $an-orange;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  max-height: 85pxl;
-}
-
-.stage {
-  padding-bottom: 25px;
 }
 
 dt {
   font-family: sans-serif;
   font-style: bold;
-  padding-top: 6px;
 }
 
 a.active.focus,
