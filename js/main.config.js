@@ -25,17 +25,17 @@ function appConfig($routeProvider) {
       templateUrl: '../html/stages/stage4.html',
     })
     .when('/resources', {
-      templateUrl: '../html/resources/temp/resources.html',
+      templateUrl: '../html/fornow/resources.html',
       controller: 'ResourceController',
       controllerAs: 'resources'
     })
     .when('/describe', {
-      templateUrl: '../html/resources/temp/descriptions.html',
+      templateUrl: '../html/fornow/descriptions.html',
       controller: 'ResourceController',
       controllerAs: 'resources'
     })
     .when('/tags', {
-      templateUrl: '../html/resources/temp/tags.html',
+      templateUrl: '../html/fornow/tags.html',
       controller: 'ResourceController',
       controllerAs: 'resources'
     })
