@@ -10,7 +10,7 @@
 
           <div class="describe" ng-repeat="item in resources.resourceAgencies">
              <span><a href="{{item.url}}">{{item.agency}}</a></span>
-             <span>{{item.description}}</span>
+             <span>{{item.tags}}</span>
              <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
              <p class="contact-middle">Phone: {{item.phone}}</p>
              <p class="contact-bottom">Hours: {{item.hours}}</p>
@@ -27,7 +27,7 @@
           </div>
 
       </div>
-      
+
     </div>
 
   </div>

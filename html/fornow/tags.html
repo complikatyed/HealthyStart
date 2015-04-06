@@ -4,22 +4,26 @@
 
     <div class="container2">
 
-    <h4 class="describe">Resource Tags</h4>
+      <div class="container3">
 
-      <div class="describe" ng-repeat="item in resources.resourceAgencies">
-        <span><a href="{{item.url}}">{{item.agency}}</a></span>
-        <p>{{item.tags}}</p>
-      </div>
+        <h4 class="describe">Resource Tags</h4>
 
-      <div id="crumbs" class="center">
-        <ul>
-    		  <li class="crumbs"><a href="/#/home">home</a></li>
-          <li class="crumbs">&nbsp; | &nbsp;</li>
-          <li class="crumbs"><a href="/#/stages">stages</a></li>
-          <li class="crumbs">&nbsp; | &nbsp;</li>
-          <li class="crumbs"><a href="/#/terms">terms</a></li>
-    	  </ul>
-      </div>
+          <div class="describe" ng-repeat="item in resources.resourceAgencies">
+            <span><a href="{{item.url}}">{{item.agency}}</a></span>
+            <p>{{item.tags}}</p>
+          </div>
+
+          <div id="crumbs" class="center">
+            <ul>
+        		  <li class="crumbs"><a href="/#/home">home</a></li>
+              <li class="crumbs">&nbsp; | &nbsp;</li>
+              <li class="crumbs"><a href="/#/stages">stages</a></li>
+              <li class="crumbs">&nbsp; | &nbsp;</li>
+              <li class="crumbs"><a href="/#/terms">terms</a></li>
+        	  </ul>
+          </div>
+
+       </div>
 
     </div>
 
