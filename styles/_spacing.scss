@@ -9,24 +9,36 @@ h2, h3, h4 {
 }
 
 .wrapper {
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 7px;
 }
 
 .container1 {
-  padding: 5px 5px;
-  margin: 3px;
+  padding: 1px 0;
+  margin: 1px;
   border-radius: 5px;
 }
 
 .container2 {
-  padding: 10px 20px;
+  padding: 10px 10px;
+  margin: 7px;
+  border-radius: 5px;
+}
+
+.container3 {
+  padding: 10px 10px;
   margin: 10px;
   border-radius: 5px;
 }
 
-
+.narrow {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 .extra {
   padding-top: 30px;
 }
@@ -65,10 +77,17 @@ p .center {
 
 #tagline {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .contact-top {
   padding-top: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.contact-middle {
+  padding-top: -3px;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
@@ -82,8 +101,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
-  max-height: 85pxl;
+  max-height: 85px;
+  //border: 10px solid white;
 }
 
 .stage {
@@ -92,4 +111,8 @@ img {
 
 dt {
   padding-top: 6px;
+}
+
+.logo {
+  padding: 20px 0px;
 }

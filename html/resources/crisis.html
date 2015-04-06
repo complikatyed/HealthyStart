@@ -1,1 +1,32 @@
-<h3>Crisis Services</h3>
+<div class="wrapper">
+
+  <div class="container1">
+
+    <div class="container2">
+
+      <h4 class="describe">Counseling Resources</h4>
+
+      <div class="describe" ng-repeat="item in resources.resourceAgencies">
+         <span><a href="{{item.url}}">{{item.agency}}</a></span>
+         <span>{{item.description}}</span>
+         <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
+         <p class="contact-middle">Phone: {{item.phone}}</p>
+         <p class="contact-bottom">Hours: {{item.hours}}</p>
+      </div>
+
+      <div id="crumbs" class="center">
+       <ul>
+         <li class="crumbs"><a href="/#/home">home</a></li>
+         <li class="crumbs">&nbsp; | &nbsp;</li>
+         <li class="crumbs"><a href="/#/stages">stages</a></li>
+         <li class="crumbs">&nbsp; | &nbsp;</li>
+         <li class="crumbs"><a href="/#/terms">terms</a></li>
+       </ul>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>

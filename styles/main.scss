@@ -6,13 +6,13 @@
 
 html, body{
   height: 100%;
-  background-color: $highlight1;
+  background-color: $theme2;
   font-family: 'Monda', sans-serif;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: $contrast1;
+  color: $an-turquoise;
   font-size: 3em;
 }
 
@@ -22,15 +22,20 @@ h2, h3, h4 {
   color: $dark-teal;
 }
 
+.container3 {
+  background-color: $offwhite1;
+}
+
 .container2 {
-  background-color: white;
+  background-color: $theme3;
 }
 
 .container1 {
-  background-color: $highlight2;
+  background-color: $theme2;
 }
+
 .wrapper {
-  background-color: $highlight3;
+  background-color: $an-orange;
 }
 
 .extra {
@@ -45,6 +50,14 @@ h2, h3, h4 {
   color: $an-orange;
 }
 
+#crumbs ul {
+  display: inline-block;
+}
+
+.narrow {
+  //border: 1px dotted black;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
 
 a.term {
   color: $letterdark2;
@@ -71,9 +84,15 @@ a.active.focus,
 a.active:focus,
 a:focus,
 a:hover {
-  color: $contrast1;
+  color: $theme4;
 }
 
 .noDecoration, a:link, a:visited {
     text-decoration: none;
+    color: $an-orange;
+}
+
+.special, a:link, a:visited {
+    text-decoration: none;
+    color: #0099CC;
 }

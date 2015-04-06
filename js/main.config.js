@@ -17,12 +17,18 @@ function appConfig($routeProvider) {
     })
     .when('/stage2', {
       templateUrl: '../html/stages/stage2.html',
+      controller: 'ShowController',
+      controllerAs: 'hsapp'
     })
     .when('/stage3', {
       templateUrl: '../html/stages/stage3.html',
+      controller: 'ShowController',
+      controllerAs: 'hsapp'
     })
     .when('/stage4', {
       templateUrl: '../html/stages/stage4.html',
+      controller: 'ShowController',
+      controllerAs: 'hsapp'
     })
     .when('/resources', {
       templateUrl: '../html/fornow/resources.html',
@@ -46,7 +52,7 @@ function appConfig($routeProvider) {
       templateUrl: '../html/resources/nutrition.html',
     })
     .when('/medical',{
-      templateUrl: '../html/resources/medical.html',
+      templateUrl: '../html/resources/mdh-clinics.html',
     })
     .when('/clinics',{
       templateUrl: '../html/resources/mdh-clinics.html',
@@ -62,6 +68,8 @@ function appConfig($routeProvider) {
     })
     .when('/parenting',{
       templateUrl: '../html/resources/parenting.html',
+      controller: 'ParentController',
+      controllerAs: 'resources'
     })
     .when('/paperwork',{
       templateUrl: '../html/resources/paperwork.html',
@@ -74,9 +82,6 @@ function appConfig($routeProvider) {
     })
     .when('/terms', {
       templateUrl: '../html/terms.html',
-    })
-    .when('/search', {
-      templateUrl: '../html/search.html',
     })
     .otherwise({
       redirectTo: '/'

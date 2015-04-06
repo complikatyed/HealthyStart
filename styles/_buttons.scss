@@ -15,28 +15,23 @@
   font-family: 'Oswald', sans-serif;
   font-size: 1.5em;
   text-align: center;
-  background-color: $highlight5;
-  box-shadow: 0 3px 0 0 #ff8a18;  // Must be the actual hex value, not a variable
-  color: #291F20;
-  outline: $spring-green
+  color: tomato;
+  outline: none;
 }
 
 .dropdown-menu {
-  background-color: $contrast1;
+  background-color: $theme2;
   font-family: 'Monda', sans-serif;
 }
 
 .btn-group {
-  width: 95%;
-  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .btn,
 .droppy {
-  display: block;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'Oswald', sans-serif;
   font-size: 1.25em;
   text-align: center;
@@ -44,28 +39,24 @@
   background-color: #fff;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2); // Must be the actual hex value, not a variable
   color: #0099cc;
-  outline: $spring-green;
 }
 
-.btn-primary.raised {
-  background: #0099cc;
-  box-shadow: 0 3px 0 0 #007299;
+// .btn-primary.raised {
+//   background: #0099cc;
+//   box-shadow: 0 3px 0 0 #007299;
+// }
+.special a {
+  color: #0099CC;
 }
-
-
-
-
-
-
 
 .btn {
   outline: none;
 }
+
 .btn.active.focus,
 .btn.active:focus,
 .btn:focus,
 .btn:hover {
-  color: $letterdark;
+  color: $contrast1;
   //box-shadow: 0 20px 0 0 white;
-  outline: $spring-green;
 }
