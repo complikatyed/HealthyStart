@@ -52,7 +52,7 @@ function appConfig($routeProvider) {
       templateUrl: '../html/resources/nutrition.html',
     })
     .when('/medical',{
-      templateUrl: '../html/resources/mdh-clinics.html',
+      templateUrl: '../html/resources/medical.html',
     })
     .when('/clinics',{
       templateUrl: '../html/resources/mdh-clinics.html',

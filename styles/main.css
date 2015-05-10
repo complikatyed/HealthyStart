@@ -8,8 +8,11 @@
   outline: none; }
 
 .dropdown-menu {
-  background-color: #3DB8BD;
+  background-color: #01A9DB;
   font-family: 'Monda', sans-serif;
+  color: white; }
+
+a.dropdown-menu {
   color: white; }
 
 .btn-group {
@@ -24,7 +27,7 @@
   background-color: #a6a6a6;
   background-color: #fff;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-  color: #0489B1; }
+  color: #01A9DB; }
 
 .btn {
   outline: none; }
@@ -34,6 +37,9 @@
 
 .describe {
   padding-bottom: 15px; }
+
+.block {
+  padding: 10px; }
 
 .fancy {
   font-style: underline; }
@@ -73,11 +79,17 @@ p .center {
   text-decoration: none;
   color: #FAAC58; }
 
-a.stage {
+a .stage {
   color: #094A7D; }
 
-a.term {
+a .term {
   color: #291F20; }
+
+a .icon {
+  color: white; }
+
+.steve {
+  color: white; }
 
 .btn.focus, .btn:focus, .btn:hover {
   color: #363D92;
@@ -108,6 +120,12 @@ li {
   margin-left: -25px;
   padding-top: 10px;
   color: #FAAC58; }
+
+.no-bullet-header1 {
+  list-style-type: none;
+  margin-left: -25px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .narrow {
   max-width: 90%;
@@ -168,16 +186,21 @@ ul .stage-list-last {
 
 .special, a:link, a:visited {
   text-decoration: none;
-  color: #094A7D; }
+  color: #01A9DB; }
 
 .special a {
   color: #363D92; }
 
+#crumbs {
+  padding-bottom: 5px;
+  padding-top: 10px; }
+
 ul #crumbs {
   list-style-type: none;
-  padding-left: 0px; }
+  padding-left: 0px;
+  padding-top: 20px; }
 
-.crumbs a {
+a .crumbs {
   color: #FAAC58; }
 
 li.crumbs {
@@ -223,12 +246,8 @@ dt {
   font-style: bold;
   padding-top: 6px; }
 
-.fa, .glyphiocon {
-  color: white; }
-
 .icon {
-  list-style-type: none;
-  color: white; }
+  list-style-type: none; }
 
 .icon-center {
   list-style-type: none;

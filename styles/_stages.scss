@@ -34,6 +34,13 @@ li {
   color: $an_orange;
 }
 
+.no-bullet-header1 {
+  list-style-type: none;
+  margin-left: -25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .narrow {
   max-width: 90%;
   margin-left: auto;

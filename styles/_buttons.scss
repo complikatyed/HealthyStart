@@ -11,9 +11,21 @@
   outline: none;
 }
 
+// .btn2 {
+//   font-family: 'Oswald', sans-serif;;
+//   color: $an-turquoise;
+//   font-size: 3em;
+//   text-align: center;
+//   background-color: $spring-yellow;
+// }
+
 .dropdown-menu {
   background-color: $theme2;
   font-family: 'Monda', sans-serif;
+  color: white;
+}
+
+a.dropdown-menu {
   color: white;
 }
 
@@ -31,10 +43,8 @@
   background-color:#a6a6a6;
   background-color: #fff;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2); // Must be the actual hex value, not a variable
-  color: $an_turquoise;
+  color: $theme2;
 }
-
-
 
 .btn {
   outline: none;

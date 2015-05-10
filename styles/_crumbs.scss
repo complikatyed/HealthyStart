@@ -1,18 +1,24 @@
 .special, a:link, a:visited {
     text-decoration: none;
-    color: $dark-teal;
+    color: $theme2;
 }
 
 .special a {
   color: $theme3;
 }
 
+#crumbs {
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
 ul #crumbs {
   list-style-type: none;
   padding-left: 0px;
+  padding-top: 20px;
 }
 
-.crumbs a {
+a .crumbs{
   color: $an-orange;
 }
 
