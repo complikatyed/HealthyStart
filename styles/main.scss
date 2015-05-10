@@ -1,46 +1,45 @@
 @import "colors";
 @import "buttons";
-@import "lists";
 @import "spacing";
+@import "links";
+@import "stages";
+@import "border";
+@import "crumbs";
 //@import "animate";
+
+$break-small: 320px;
+$break-large: 1200px;
 
 html, body{
   height: 100%;
-  background-color: $theme2;
+  background-color: $an_turquoise;
   font-family: 'Monda', sans-serif;
+  font-size: 14px;
+  @media screen and (max-width: $break-small) {
+    font-size: 12px;
+    }
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   color: $an-turquoise;
-  font-size: 3em;
+  font-size: 1.75em;
+  text-align: center;
+  padding-top: 10px;
+
+  @media screen and (max-width: $break-small) {
+    font-size: 1.25em;
+    }
 }
 
 h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-style: bold;
   color: $dark-teal;
+  //padding-top: 20px;
+  margin-bottom: 0;
 }
 
-.container3 {
-  background-color: $offwhite1;
-}
-
-.container2 {
-  background-color: $theme3;
-}
-
-.container1 {
-  background-color: $theme2;
-}
-
-.wrapper {
-  background-color: $an-orange;
-}
-
-.extra {
-  color: $highlight3;
-}
 
 .fancy {
   font-style: underline;
@@ -50,57 +49,51 @@ h2, h3, h4 {
   color: $an-orange;
 }
 
-#crumbs ul {
-  display: inline-block;
-}
 
-.crumbs a:link, a:visited
-a.term.active.focus,
-a.term.active:focus,
-a.term:focus,
-a.term:hover {
-  color: $an-orange;
-}
-
-.narrow {
-  //border: 1px dotted black;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
-}
-
-a.term {
-  color: $letterdark2;
-}
-
-a.term.active.focus,
-a.term.active:focus,
-a.term:focus,
-a.term:hover {
-  color: $spring-green;
-}
-
-#tagline {
-  font-size: 1.09em;
-  color: $an-orange;
-}
+// Terms page, emphasis for terms
 
 dt {
   font-family: sans-serif;
   font-style: bold;
+  padding-top: 6px;
 }
 
-a.active.focus,
-a.active:focus,
-a:focus,
-a:hover {
-  color: $theme4;
+// Icons for the drop-down menus on the home page
+
+.fa,
+.glyphiocon {
+  color: white;
 }
 
-.noDecoration, a:link, a:visited {
-    text-decoration: none;
-    color: $an-orange;
+.icon {
+  list-style-type: none;
+  color: white;
 }
 
-.special, a:link, a:visited {
-    text-decoration: none;
-    color: #0099CC;
+.icon-center {
+  list-style-type: none;
+  text-align: center;
+}
+
+
+// Main page - site tagline
+
+#tagline {
+  font-size: 1.09em;
+  color: $an-orange;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+// Alignment Nashville Logo Styling
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+}
+
+.logo {
+  padding: 20px 0px;
 }

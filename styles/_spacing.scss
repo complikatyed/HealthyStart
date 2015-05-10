@@ -1,44 +1,4 @@
-h1 {
-  text-align: center;
-  padding-top: 10px;
-}
 
-h2, h3, h4 {
-  //padding-top: 20px;
-  margin-bottom: 0;
-}
-
-.wrapper {
-  padding: 7px;
-  margin: 7px;
-  border-radius: 7px;
-}
-
-.container1 {
-  padding: 1px 0;
-  margin: 1px;
-  border-radius: 5px;
-}
-
-.container2 {
-  padding: 10px 10px;
-  margin: 7px;
-  border-radius: 5px;
-}
-
-.container3 {
-  padding: 10px 10px;
-  margin: 10px;
-  border-radius: 5px;
-}
-
-.narrow {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-}
 .extra {
   padding-top: 30px;
 }
@@ -69,15 +29,11 @@ p .center {
   //padding-top: -25px;
 }
 
+
+
 .subhead {
   text-align: center;
   padding-bottom: 10px;
-}
-
-
-#tagline {
-  text-align: center;
-  padding-bottom: 20px;
 }
 
 .contact-top {
@@ -95,24 +51,4 @@ p .center {
 .contact-bottom {
   padding-top: -3px;
   padding-bottom: 5px;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 85px;
-  //border: 10px solid white;
-}
-
-.stage {
-  padding-bottom: 25px;
-}
-
-dt {
-  padding-top: 6px;
-}
-
-.logo {
-  padding: 20px 0px;
 }

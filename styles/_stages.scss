@@ -1,0 +1,75 @@
+.btn.focus, .btn:focus, .btn:hover {
+  color: $theme3;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: disc;
+}
+
+.no-bullet {
+  list-style-type: none;
+  margin-left: -55px;
+  font-style: italic;
+}
+
+.no-bullet-a {
+  list-style-type: none;
+  margin-left: -55px;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.no-bullet-plain {
+  list-style-type: none;
+  margin-left: -55px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.no-bullet-header {
+  list-style-type: none;
+  margin-left: -25px;
+  padding-top: 10px;
+  color: $an_orange;
+}
+
+.narrow {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background: white;
+  //border: 1px dotted black;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stage {
+  padding-bottom: 25px;
+}
+
+ul .stage-list {
+  background: white;
+  margin-left: -15px;
+  padding-top: 10px
+}
+
+ul .stage-list-last {
+  padding-bottom: 10px;
+  margin-left: -15px;
+  padding-top: 10px
+}
+
+.sublist {
+  margin-left: -35px;
+  list-style-type: circle;
+  padding-top: 5px;
+}
+
+.slight-indent {
+  padding-top: 10px;
+  margin-left: -30px;
+  margin-top: 10px;
+  color: $highlight2;
+}

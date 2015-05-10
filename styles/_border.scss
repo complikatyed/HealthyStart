@@ -1,26 +1,46 @@
-// body:before, body:after {
-//     content: "";
-//     position: fixed;
-//     background: $spring-green;
-//     left: 0;
-//     right: 0;
-//     height: 5px;
-// }
+// This styling makes up the background for all pages
+
+
+// The outermost border is the body of the page itself
+// It is currently set to $an_turquoise (the color of the
+// tagline on the Alignment Nashville logo).
 //
-// body:before {
-//     top: 0;
-// }
+// For the smallest screens, it needs to be quite narrow.
+// This is accomplised by setting a negative margin on the
+// next wrapper (outer_wrapper).
+
+
+// Currently set to purple
+.outer_wrapper {
+  background-color: $theme3;
+  padding: 6px;
+  margin: -6px;
+  border-radius: 4px;
+}
+
+
+// Currently set to
+.mid_wrapper {
+  background-color: $an_turquoise;
+  padding: 3px 3px;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+
 //
-// body:after {
-//     bottom: 0;
-// }
-//
-// body {
-//     border-left: 5px solid $spring-green;
-//     border-right: 5px solid $spring-green;
-// }
-//
-// .page-wrapper {
-//   height: 100%;
-//   border: 5px solid $spring-green;
-// }
+.narrow_wrapper {
+  background-color: $an-orange;
+  padding: 1px 0;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+
+// This is the innermost plain base background
+.inner_base {
+  background-color: $offwhite1;
+  padding: 2px 2px;
+  margin: 3px;
+  border-radius: 5px;
+}
