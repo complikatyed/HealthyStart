@@ -51,14 +51,18 @@ function appConfig($routeProvider) {
     .when('/nutrition',{
       templateUrl: '../html/resources/nutrition.html',
     })
-    .when('/medical',{
-      templateUrl: '../html/resources/medical.html',
+    .when('/medical_1',{
+      templateUrl: '../html/resources/medical_1.html',
+      controller: 'MedicalController',
+      controllerAs: 'resources'
     })
     .when('/clinics',{
       templateUrl: '../html/resources/mdh-clinics.html',
     })
     .when('/homevisits',{
       templateUrl: '../html/resources/homevisits.html',
+      controller: 'VisitController',
+      controllerAs: 'resources'
     })
     .when('/counsel',{
       templateUrl: '../html/resources/counseling.html',
