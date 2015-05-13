@@ -8,6 +8,8 @@
 //@import "animate";
 
 $break-small: 320px;
+$break-retina: 414px;
+$break-medium: 992px;
 $break-large: 1200px;
 
 html, body{
@@ -22,8 +24,8 @@ html, body{
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: $an-turquoise;
-  font-size: 1.75em;
+  color: $theme2;
+  font-size: 2.5em;
   text-align: center;
   padding-top: 10px;
 
@@ -32,11 +34,11 @@ h1 {
     }
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   font-family: 'Oswald', sans-serif;
   font-style: bold;
   color: $dark-teal;
-  //padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 0;
 }
 
@@ -47,6 +49,7 @@ h2, h3, h4 {
 
 .subhead {
   color: $an-orange;
+  padding-bottom: 10px;
 }
 
 
