@@ -29,8 +29,8 @@
               If you need help, please contact one of these resources!</p>
               <br>
 
-      <div class="describe" ng-repeat="item in resources.resourceAgencies">
-         <h6><a href="{{item.url}}">{{item.agency}}</a></h6><br>
+      <div ng-repeat="item in resources.resourceAgencies">
+         <h4 class="friendly"><a href="{{item.url}}">{{item.agency}}</a></h4><br>
          <span>{{item.description}}</span>
          <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
          <p class="contact-middle">Phone: {{item.phone}}</p>

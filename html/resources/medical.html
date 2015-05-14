@@ -29,7 +29,7 @@
              choose to see an obstetrician, midwife, or nurse practitioner. The providers below offer a variety of services to care for pregnant women and their growing babies.</p>
 
           <div class="describe" ng-repeat="item in resources.resourceAgencies">
-             <h6><a href="{{item.url}}">{{item.agency}}</a></h6>
+             <h4 class="friendly"><a href="{{item.url}}">{{item.agency}}</a></h4>
              <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
              <p class="contact-middle">Phone: {{item.phone}}</p>
              <p class="contact-middle" ng-hide="{{item.hours}} == null">Hours: {{item.hours}}</p>

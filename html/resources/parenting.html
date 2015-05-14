@@ -26,8 +26,8 @@
           <div class="row">
           <div class="col-md-12">
 
-          <div class="describe" ng-repeat="item in resources.resourceAgencies">
-             <h6><a href="{{item.url}}">{{item.agency}}</a></h6>
+          <div ng-repeat="item in resources.resourceAgencies">
+            <h4 class="friendly"><a href="{{item.url}}">{{item.agency}}</a></h4>
              <p class="contact-middle" ng-hide="{{item.person}} == null">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
              <p class="contact-middle">Phone: {{item.phone}}</p>
              <p class="contact-bottom" ng-hide="{{item.hours}} == null">Hours: {{item.hours}}</p>

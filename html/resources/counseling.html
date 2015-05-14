@@ -28,8 +28,8 @@
             <p class="subhead">Remember, you don't have to handle this alone.<br>
             The resources and agencies below provide many different types of counseling services.</p>
 
-          <div class="describe" ng-repeat="item in resources.resourceAgencies">
-             <h6><a href="{{item.url}}">{{item.agency}}</a></h6>
+          <div ng-repeat="item in resources.resourceAgencies">
+             <h4 class="friendly"><a href="{{item.url}}">{{item.agency}}</a></h4>
              <span>{{item.description}}</span>
              <p class="contact-top" ng-hide="{{item.person}} == null">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
              <p class="contact-middle">Phone: {{item.phone}}</p>

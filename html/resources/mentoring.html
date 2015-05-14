@@ -27,8 +27,8 @@
           <div class="col-md-12">
             <p class="subhead">Sometimes it helps to talk with someone who shares your experience.<br>You'll find peer support groups and mentoring programs here..</p>
               <br>
-          <div class="describe" ng-repeat="item in resources.resourceAgencies">
-             <h6><a href="{{item.url}}">{{item.agency}}</a></h6>
+          <div ng-repeat="item in resources.resourceAgencies">
+             <h4 class="friendly"><a href="{{item.url}}">{{item.agency}}</a></h4>
              <span>{{item.description}}</span>
              <p class="contact-top" ng-hide="{{item.person}} == null">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
              <p class="contact-middle">Phone: {{item.phone}}</p>
