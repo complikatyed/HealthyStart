@@ -7,47 +7,48 @@
       <div class="inner_base">
 
         <div class="block">
+        <div class="container-fluid">
+        <div class="row">
 
-          <h3>Medical Care Resources</h3><br>
-
-           <p>Throughout your pregnancy, you'll need regular medical care.
-              You can choose to see an obstetrician, midwife, or nurse practitioner.
-              The providers below offer a variety of services to care for pregnant women and their growing babies.</p>
-
-           <div>
-             <h4 class="extra">Metro Public Health Clinics</h4>
-             <p>For more information: <a href="/#/clinics">Clinic Locations</a></p>
-           </div>
-
-            <div>
-              <h4 class="extra">Centering Pregnancy at Meharry Medical College</h4>
-              <p>For more information: <a href="http://www.meharrycenteringpregnancy.org">Meharry Centering Pregnancy</a></p>
-            </div>
-            <div>
-              <h4 class="extra">Matthew Walker Clinic</h4>
-              <p>For more information: <a href="http://www.mwchc.org">Matthew Walker Clinic</a></p>
-            </div>
-            <div>
-              <h4 class="extra">Hope Clinic for Women</h4>
-              <a href="tel:615-321-0005">615-321-0005</a>
-              <p>For more information: <a href="http://www.hopeclinicforwomen.org/pregnancy/">Hope Clinic for Women</a></p>
-            </div>
-            <div>
-              <h4 class="extra">Vine Hill Community Clinic</h4>
-              <p>For more information: <a href="http://uchshealth.org/vine-hill-clinic/">Vine Hill Community Clinic</a><p>
-            </div>
-            <br>
-            <div id="crumbs">
-             <ul>
-               <li class="crumbs"><a href="/#/home">home</a></li>
-               <li class="crumbs">&nbsp; | &nbsp;</li>
-               <li class="crumbs"><a href="/#/map">map</a></li>
-               <li class="crumbs">&nbsp; | &nbsp;</li>
-               <li class="crumbs"><a href="/#/terms">terms</a></li>
-             </ul>
-           </div>
+          <div class="col-xs-3">
+            <a href="/#/school"><i class="fa fa-angle-double-left large left_point"></i></a>
           </div>
+
+          <div class="col-xs-6">
+            <h1 class="describe">Medical Providers</h1>
+          </div>
+
+          <div class="col-xs-3 text-right">
+            <a href="/#/homevisits"><i class="fa fa-angle-double-right large right_point"></i></a>
+          </div>
+        </div>
+
+        <div class="row">
+        <div class="col-md-12">
+          <p class="subhead">Throughout your pregnancy, you'll need regular medical care. Most women
+             choose to see an obstetrician, midwife, or nurse practitioner. The providers below offer a variety of services to care for pregnant women and their growing babies.</p>
+
+          <div class="describe" ng-repeat="item in resources.resourceAgencies">
+             <h6><a href="{{item.url}}">{{item.agency}}</a></h6>
+             <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
+             <p class="contact-middle">Phone: {{item.phone}}</p>
+             <p class="contact-middle" ng-hide="{{item.hours}} == null">Hours: {{item.hours}}</p>
+             <p class="contact-bottom" ng-hide="{{item.cost}} == null">Cost: {{item.cost}}</p>
+             <span>{{item.description}}</span>
+          </div>
+
+          <div id="crumbs" class="center">
+  	        <ul id="crumbs">
+             <li class="crumbs"><a href="/#/home">home</a></li>
+             <li class="crumbs">&nbsp; | &nbsp;</li>
+             <li class="crumbs"><a href="/#/stages">stages</a></li>
+             <li class="crumbs">&nbsp; | &nbsp;</li>
+             <li class="crumbs"><a href="/#/terms">terms</a></li>
+           </ul>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
+</div>

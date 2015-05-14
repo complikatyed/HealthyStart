@@ -7,19 +7,34 @@
       <div class="inner_base">
 
         <div class="block">
+          <div class="container-fluid">
+          <div class="row">
 
-        <h3>Parenting Resources</h3><br>
+            <div class="col-xs-3">
+              <a href="/#/counsel"><i class="fa fa-angle-double-left large left_point"></i></a>
+            </div>
 
-          <div class="describe" ng-repeat="item in resources.resourceAgencies">
-             <span><h4><a href="{{item.url}}">{{item.agency}}</a></h4></span>
-             <span>{{item.description}}</span>
-             <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
-             <p class="contact-middle">Phone: {{item.phone}}</p>
-             <p class="contact-bottom">Hours: {{item.hours}}</p>
+            <div class="col-xs-6">
+              <h1 class="describe">Parenting Classes</h1>
+            </div>
+
+            <div class="col-xs-3 text-right">
+              <a href="/#/mentor"><i class="fa fa-angle-double-right large right_point"></i></a>
+            </div>
           </div>
 
-          <div id="crumbs">
-           <ul>
+          <div class="row">
+          <div class="col-md-12">
+
+          <div class="describe" ng-repeat="item in resources.resourceAgencies">
+             <h6><a href="{{item.url}}">{{item.agency}}</a></h6>
+             <p class="contact-middle" ng-hide="{{item.person}} == null">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
+             <p class="contact-middle">Phone: {{item.phone}}</p>
+             <p class="contact-bottom" ng-hide="{{item.hours}} == null">Hours: {{item.hours}}</p>
+          </div>
+
+          <div id="crumbs" class="center">
+  	        <ul id="crumbs">
              <li class="crumbs"><a href="/#/home">home</a></li>
              <li class="crumbs">&nbsp; | &nbsp;</li>
              <li class="crumbs"><a href="/#/stages">stages</a></li>
@@ -27,7 +42,6 @@
              <li class="crumbs"><a href="/#/terms">terms</a></li>
            </ul>
           </div>
-
         </div>
       </div>
     </div>

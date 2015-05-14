@@ -6,10 +6,31 @@
 
       <div class="inner_base">
 
-      <h4 class="describe">Counseling Resources</h4>
+        <div class="block">
+          <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-xs-3">
+              <a href="/#/resources"><i class="fa fa-angle-double-left large left_point"></i></a>
+            </div>
+
+            <div class="col-xs-6">
+              <h1 class="describe">Crisis Support</h1>
+            </div>
+
+            <div class="col-xs-3 text-right">
+              <a href="/#/home"><i class="fa fa-angle-double-right large right_point"></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-12">
+            <p class="subhead">Pregnancy can be overwhelming under the best circumstances.<br>
+              If you need help, please contact one of these resources!</p>
+              <br>
 
       <div class="describe" ng-repeat="item in resources.resourceAgencies">
-         <span><a href="{{item.url}}">{{item.agency}}</a></span>
+         <h6><a href="{{item.url}}">{{item.agency}}</a></h6><br>
          <span>{{item.description}}</span>
          <p class="contact-top">Contact: <a href="mailto:{{item.email}}">{{item.person}}</a></p>
          <p class="contact-middle">Phone: {{item.phone}}</p>
@@ -17,7 +38,7 @@
       </div>
 
       <div id="crumbs" class="center">
-       <ul>
+  	    <ul id="crumbs">
          <li class="crumbs"><a href="/#/home">home</a></li>
          <li class="crumbs">&nbsp; | &nbsp;</li>
          <li class="crumbs"><a href="/#/stages">stages</a></li>

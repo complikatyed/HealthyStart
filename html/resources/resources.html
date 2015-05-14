@@ -1,0 +1,62 @@
+<div class="outer_wrapper">
+
+  <div class="narrow_wrapper">
+
+    <div class="mid_wrapper">
+
+      <div class="inner_base">
+
+        <div class="block">
+          <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-xs-3">
+              <a href="/#/paperwork"><i class="fa fa-angle-double-left large left_point"></i></a>
+            </div>
+
+            <div class="col-xs-6">
+              <h1 class="describe">All Resource Contacts</h1>
+            </div>
+
+            <div class="col-xs-3 text-right">
+              <a href="/#/crisis"><i class="fa fa-angle-double-right large right_point"></i></a>
+            </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-12">
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Agency</th>
+                <th>Contact Name and Email</th>
+                <th>Phone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="item in resources.resourceAgencies">
+                <td><a href="{{item.url}}">{{item.agency}}</a></td>
+                <td><a href="mailto:{{item.email}}">{{item.person}}</a></td>
+                <td>{{item.phone}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="crumbs" class="center">
+            <ul>
+        		  <li class="crumbs"><a href="/#/home">home</a></li>
+              <li class="crumbs">&nbsp; | &nbsp;</li>
+              <li class="crumbs"><a href="/#/stages">stages</a></li>
+              <li class="crumbs">&nbsp; | &nbsp;</li>
+              <li class="crumbs"><a href="/#/terms">terms</a></li>
+        	  </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </div>
+  </div>
+</div>
