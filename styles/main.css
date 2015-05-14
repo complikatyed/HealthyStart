@@ -52,6 +52,13 @@ a.dropdown-menu {
   padding-bottom: 15px;
   padding-top: 10px; }
 
+@media screen and (max-width: 414px) {
+  .justy {
+    padding-right: 3px; } }
+@media screen and (max-width: 992px) {
+  .justy {
+    padding-right: 5px; } }
+
 .block {
   padding: 10px; }
 
@@ -70,6 +77,10 @@ a.dropdown-menu {
 
 p .center {
   text-align: center; }
+
+.friendly {
+  padding-bottom: 10px;
+  padding-top: 20px; }
 
 .subhead {
   text-align: center;
@@ -168,7 +179,7 @@ ul .stage-list, .stage-list-last {
   @media screen and (max-width: 992px) {
     ul .stage-list, .stage-list-last {
       margin-left: -12px;
-      padding-right: 10px; } }
+      padding-right: 5px; } }
 
 ul .stage-list-last {
   padding-bottom: 10px; }
@@ -185,7 +196,7 @@ ul .stage-list-last {
   @media screen and (max-width: 992px) {
     .sublist, .sublist-last {
       margin-left: -30px;
-      padding-right: 15px; } }
+      padding-right: 5px; } }
 
 .sublist-last {
   padding-bottom: 10px; }
@@ -197,6 +208,10 @@ ul .stage-list-last {
   max-width: 360px;
   color: #EB6841; }
   @media screen and (max-width: 414px) {
+    .slight-indent {
+      margin-left: -25px;
+      margin-right: 5px; } }
+  @media screen and (max-width: 992px) {
     .slight-indent {
       margin-left: -25px;
       margin-right: 5px; } }
@@ -235,7 +250,7 @@ img.stages1 {
       display: none; } }
   @media screen and (max-width: 992px) {
     img.stages1 {
-      max-width: 50%; } }
+      max-width: 98%; } }
 
 img.lower {
   display: none; }
@@ -328,14 +343,14 @@ h1 {
   padding-bottom: 15px;
   color: white; }
 
-h2, h3, h4, h5 {
+h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-style: bold;
   color: #094A7D;
   padding-bottom: 20px;
   margin-bottom: 0; }
 
-h6 {
+h5 {
   font-family: 'Oswald', sans-serif;
   color: #01A9DB;
   padding-bottom: 5px;

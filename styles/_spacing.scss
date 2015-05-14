@@ -1,3 +1,6 @@
+$break-small: 414px;
+$break-medium: 992px;
+$break-large: 1200px;
 
 .extra {
   padding-top: 30px;
@@ -17,6 +20,16 @@
   padding-bottom: 15px;
   padding-top: 10px;
 }
+
+.justy {
+  @media screen and (max-width: $break-small) {
+    padding-right: 3px;
+    }
+  @media screen and (max-width: $break-medium) {
+    padding-right: 5px;
+    }
+}
+
 
 .block {
   padding: 10px;
@@ -44,7 +57,10 @@ p .center {
   //padding-top: -25px;
 }
 
-
+.friendly {
+  padding-bottom: 10px;
+  padding-top: 20px
+}
 
 .subhead {
   text-align: center;
