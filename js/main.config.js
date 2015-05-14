@@ -9,6 +9,8 @@ function appConfig($routeProvider) {
     })
     .when('/stage0', {
       templateUrl: '../html/stages/stage0.html',
+      controller: 'ShowController',
+      controllerAs: 'hsapp'
     })
     .when('/stage1', {
       templateUrl: '../html/stages/stage1.html',
@@ -30,29 +32,16 @@ function appConfig($routeProvider) {
       controller: 'ShowController',
       controllerAs: 'hsapp'
     })
-    .when('/resources', {
-      templateUrl: '../html/fornow/resources.html',
-      controller: 'ResourceController',
-      controllerAs: 'resources'
-    })
     .when('/describe', {
       templateUrl: '../html/fornow/descriptions.html',
-      controller: 'ResourceController',
-      controllerAs: 'resources'
-    })
-    .when('/tags', {
-      templateUrl: '../html/fornow/tags.html',
       controller: 'ResourceController',
       controllerAs: 'resources'
     })
     .when('/school',{
       templateUrl: '../html/resources/education.html',
     })
-    .when('/nutrition',{
-      templateUrl: '../html/resources/nutrition.html',
-    })
-    .when('/medical_1',{
-      templateUrl: '../html/resources/medical_1.html',
+    .when('/medical',{
+      templateUrl: '../html/resources/medical.html',
       controller: 'MedicalController',
       controllerAs: 'resources'
     })
@@ -66,23 +55,33 @@ function appConfig($routeProvider) {
     })
     .when('/counsel',{
       templateUrl: '../html/resources/counseling.html',
-    })
-    .when('/mentor',{
-      templateUrl: '../html/resources/mentoring.html',
+      controller: 'CounselController',
+      controllerAs: 'resources'
     })
     .when('/parenting',{
       templateUrl: '../html/resources/parenting.html',
       controller: 'ParentController',
       controllerAs: 'resources'
     })
+    .when('/mentor',{
+      templateUrl: '../html/resources/mentoring.html',
+      controller: 'MentorController',
+      controllerAs: 'resources'
+    })
     .when('/paperwork',{
       templateUrl: '../html/resources/paperwork.html',
+      controller: 'PaperworkController',
+      controllerAs: 'resources'
     })
-    .when('/map',{
-      templateUrl: '../html/resources/master-map.html',
+    .when('/resources', {
+      templateUrl: '../html/resources/resources.html',
+      controller: 'ResourceController',
+      controllerAs: 'resources'
     })
     .when('/crisis',{
       templateUrl: '../html/resources/crisis.html',
+      controller: 'CrisisController',
+      controllerAs: 'resources'
     })
     .when('/terms', {
       templateUrl: '../html/terms.html',

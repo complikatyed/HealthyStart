@@ -1,15 +1,15 @@
 angular
   .module('hsapp')
-  .factory('parentFactory', parentFactory);
+  .factory('mentorFactory', mentorFactory);
 
-  function parentFactory($http, BASE_URL) {
+  function mentorFactory($http, BASE_URL) {
 
     var fb = new Firebase(BASE_URL);
     var vm = this;
 
     findAll = function (cb) {
       $http
-        .get(BASE_URL + '/parent.json')
+        .get(BASE_URL + '/mentor.json')
         .success(function (data) {
           cb(data);
         });
