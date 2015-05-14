@@ -1,4 +1,8 @@
 
+$break-small: 414px;
+$break-medium: 992px;
+$break-large: 1200px;
+
 
 .btn1,
 .stage-btn {
@@ -30,20 +34,26 @@ a.dropdown-menu {
 }
 
 .btn-group {
-  display: block;
+  display: inline-block;
   margin-right: auto;
   margin-left: auto;
 }
 
+
 .btn,
 .droppy {
+  display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 1.25em;
   text-align: center;
+  width: 300px;
   background-color:#a6a6a6;
   background-color: #fff;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2); // Must be the actual hex value, not a variable
   color: $theme2;
+  @media screen and (max-width: $break-small) {
+    width: 210px;
+  }
 }
 
 .btn {

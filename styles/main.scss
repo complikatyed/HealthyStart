@@ -7,8 +7,7 @@
 @import "crumbs";
 //@import "animate";
 
-$break-small: 320px;
-$break-retina: 414px;
+$break-small: 414px;
 $break-medium: 992px;
 $break-large: 1200px;
 
@@ -28,10 +27,14 @@ h1 {
   font-size: 2.5em;
   text-align: center;
   padding-top: 10px;
-
   @media screen and (max-width: $break-small) {
-    font-size: 1.25em;
+    font-size: 2em;
     }
+}
+
+.describe_w h1 {
+  padding-bottom: 15px;
+  color: white;
 }
 
 h2, h3, h4, h5 {
@@ -42,6 +45,20 @@ h2, h3, h4, h5 {
   margin-bottom: 0;
 }
 
+h6 {
+  font-family: 'Oswald', sans-serif;
+  color: $theme2;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.left_sh {
+  margin-left: 20px;
+  margin-right: 10px;
+  @media screen and (max-width: $break-small) {
+    margin-left: 5px;
+    }
+}
 
 .fancy {
   font-style: underline;
@@ -50,6 +67,8 @@ h2, h3, h4, h5 {
 .subhead {
   color: $an-orange;
   padding-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -58,11 +77,31 @@ h2, h3, h4, h5 {
 dt {
   font-family: sans-serif;
   font-style: bold;
-  padding-top: 6px;
+  @media screen and (max-width: $break-small) {
+    padding-top: 20px;
+    color: $theme3;
+    }
 }
 
 // Icons for the drop-down menus on the home page
 
+.left_point,
+.right_point {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 2em;
+}
+
+.left_point_w,
+.right_point_w {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 2em;
+  color: white;
+}
+.right_point {
+  text-align: right;
+}
 
 .icon {
   list-style-type: none;
@@ -81,6 +120,9 @@ dt {
   color: $an-orange;
   text-align: center;
   padding-bottom: 20px;
+  @media screen and (max-width: $break-small) {
+    padding-bottom: 2px;
+    }
 }
 
 // Alignment Nashville Logo Styling

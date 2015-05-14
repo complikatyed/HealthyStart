@@ -1,5 +1,4 @@
-$break-small: 320px;
-$break-retina: 414px;
+$break-small: 414px;
 $break-medium: 992px;
 $break-large: 1200px;
 
@@ -17,8 +16,13 @@ li {
 .no-bullet-plain,
 .no-bullet-a {
   list-style-type: none;
-  margin-left: -55px;
+  margin-left: -37px;
+  margin-right: 15px;
   font-style: italic;
+  @media screen and (max-width: $break-small) {
+    margin-left: -55px;
+    margin-right: 10px;
+    }
 }
 
 .no-bullet-a {
@@ -34,7 +38,7 @@ li {
 .no-bullet-header,
 .no-bullet-header1 {
   list-style-type: none;
-  margin-left: -25px;
+  margin-left: -20px;
   padding-top: 10px;
   color: $an_orange;
 }
@@ -65,7 +69,12 @@ ul .stage-list,
   max-width: 360px;
   border-radius: 5px;
   @media screen and (max-width: $break-small) {
-    margin-left: -15px;
+    margin-left: -12px;
+    padding-right: 10px;
+    }
+  @media screen and (max-width: $break-medium) {
+    margin-left: -12px;
+    padding-right: 10px;
     }
 }
 
@@ -75,10 +84,19 @@ ul .stage-list-last {
 
 .sublist,
 .sublist-last {
-  margin-left: -35px;
-  list-style-type: none;
+  @media screen and (max-width: $break-small) {
+    margin-left: -40px;
+    padding-right: 5px;
+    }
+  @media screen and (max-width: $break-medium) {
+    margin-left: -30px;
+    padding-right: 15px;
+    }
+  margin-left: -20px;
+  list-style-type: circle;
   padding-top: 5px;
   max-width: 360px;
+
 }
 
 .sublist-last {
@@ -87,10 +105,14 @@ ul .stage-list-last {
 
 .slight-indent {
   padding-top: 10px;
-  margin-left: -30px;
+  margin-left: -20px;
   margin-top: 10px;
   max-width: 360px;
   color: $highlight2;
+  @media screen and (max-width: $break-small) {
+    margin-left: -25px;
+    margin-right: 5px;
+    }
 }
 
 img.stages {
@@ -107,6 +129,16 @@ img.stages {
     }
 }
 
+.stages1 {
+  @media screen and (max-width: $break-small) {
+    display:none;
+    }
+  @media screen and (max-width: $break-medium) {
+    display: none;
+    }
+}
+
+
 img.stages1 {
   display: block;
   max-width: 85%;
@@ -119,6 +151,9 @@ img.stages1 {
   @media screen and (max-width: $break-small) {
     display:none;
     }
+  @media screen and (max-width: $break-medium) {
+    max-width: 50%;
+    }
 }
 
 
@@ -130,6 +165,7 @@ img.lower {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     }
   display: none;
