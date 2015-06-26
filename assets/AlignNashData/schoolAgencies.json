@@ -12,6 +12,19 @@
       "hours":"12:30-7:30 pm Monday -Friday",
       "tags":"return to school, graduation, high school diploma",
       "description":"The Glencliff G.A.I.N.S Academy program is an opportunity for students to advance as well as \"catch up\" on courses required for graduation. The G.A.I.N.S Academy offers a flexible school day that is conducive for students with extenuating circumstances."
-    },    
-
+    },
+    {
+      "agency":"Nashville Diploma Plus High School",
+      "person":"Jill Bates, Lead Administrator",
+      "phone":"615-566-1269 ",
+      "fax":"null",
+      "email":"",
+      "url":"www.mnps.org",
+      "eligibility":"Students who are disengaged from the traditional system, are over-aged and under-credited, and demonstrate a wealth of creativity",
+      "location":"160 Rural Ave   (formerly Martha Vaught)",
+      "cost":"Free",
+      "hours":"null",
+      "tags":"Return to school, graduation, high school diploma",
+      "description":"The Nashville Diploma Plus High School offers a rigorous and authentic environment that connects academics to the real world. Students best suited for Diploma Plus include those that have been disengaged from the traditional system, are over-aged and under-credited, and demonstrate a wealth of creativity"
+    },
 ]
