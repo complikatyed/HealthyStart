@@ -33,6 +33,8 @@ The nine community resource pages are organized by topic and use AngularJS to di
 
 ![Screenshot 6: No selection](https://github.com/complikatyed/HealthyStart/blob/master/assets/images/HS_StayInSchool.png?raw=true)
 
+The deployed app can be viewed here:  [https://healthystart.firebaseapp.com](https://healthystart.firebaseapp.com)
+
 ---
 
 ### Technologies:
